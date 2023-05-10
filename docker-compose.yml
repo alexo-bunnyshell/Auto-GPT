@@ -8,8 +8,6 @@ services:
     depends_on:
       - redis
     build: ./
-    env_file:
-      - .env
     environment:
       MEMORY_BACKEND: ${MEMORY_BACKEND:-redis}
       REDIS_HOST: ${REDIS_HOST:-redis}

@@ -24,7 +24,7 @@ COPY requirements.txt .
 
 # Set the entrypoint
 # ENTRYPOINT ["python", "-m", "autogpt"]
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["sleep", "infinity"]
 
 # dev build -> include everything
 FROM autogpt-base as autogpt-dev

@@ -19,11 +19,12 @@ ENV PIP_NO_CACHE_DIR=yes \
 
 # Install the required python packages globally
 ENV PATH="$PATH:/root/.local/bin"
+COPY docker/entrypoint.sh
 COPY requirements.txt .
 
 # Set the entrypoint
 # ENTRYPOINT ["python", "-m", "autogpt"]
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["entrypoint.sh"]
 
 # dev build -> include everything
 FROM autogpt-base as autogpt-dev

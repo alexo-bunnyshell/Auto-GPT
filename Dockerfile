@@ -23,7 +23,7 @@ COPY requirements.txt .
 
 # Set the entrypoint
 # ENTRYPOINT ["python", "-m", "autogpt"]
-ENTRYPOTIN ["bash"]
+ENTRYPOINT ["bash"]
 
 # dev build -> include everything
 FROM autogpt-base as autogpt-dev

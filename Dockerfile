@@ -22,7 +22,8 @@ ENV PATH="$PATH:/root/.local/bin"
 COPY requirements.txt .
 
 # Set the entrypoint
-ENTRYPOINT ["python", "-m", "autogpt"]
+# ENTRYPOINT ["python", "-m", "autogpt"]
+ENTRYPOTIN ["bash"]
 
 # dev build -> include everything
 FROM autogpt-base as autogpt-dev
